@@ -25,7 +25,7 @@ class Cat(models.Model):
     
 # Add new Feeding model below Cat model
 class Feeding(models.Model):
-    date = models.DateField()
+    date = models.DateField('Feeding Date')
     meal = models.CharField(
         max_length=1,
         choices=MEALS,
